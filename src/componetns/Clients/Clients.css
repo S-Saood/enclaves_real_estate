@@ -1,0 +1,167 @@
+
+.clients-section{
+  width: 100%;
+  padding: 100px clamp(40px, 6vw, 100px);
+  background-color: #e8e8e8;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  padding-bottom: 200px;
+    font-family: "Inter", sans-serif;;
+
+}
+
+
+.top-box-clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  /* padding: 20px 40px; */
+}
+
+.top-box-clients h1{
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-family: "Playfair Display", serif;
+
+}
+
+.top-box-clients p {
+  font-size: 1.2em;
+  color: var(--subheading);
+}
+
+
+.bottom-box-clients{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+
+.col-1-clients{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+
+.col-1-clients:hover{
+    transform: translateY(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.content-box-clients{
+  background-color: white;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.content-box-clients h2{
+  color: black;
+  font-size: 1.5rem;
+}
+
+.content-box-clients p{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--bodytxt);
+}
+
+.content-box-clients h3{
+  color:var(--subheading)
+}
+
+
+/* 
+.img-box-clients img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+ */
+
+
+@media(max-width: 1000px){
+  .bottom-box-clients{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media(max-width: 800px){
+  .bottom-box-clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(max-width: 800px){
+  .bottom-box-clients{
+    display: flex;
+    flex-direction: column;
+  }
+  .top-box-clients{
+    text-align: center;
+  }
+  .top-box-clients h1{
+    font-size: 2rem;
+  }
+  .top-box-clients p{
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+@media(max-width: 500px){
+  .top-box-clients h1{
+    font-size: 1.7rem;
+  }
+  .clients-section{
+    padding: 100px clamp(10px, 6vw, 100px);
+    padding-bottom: 200px;
+  }
+}
+
+
+@media(max-width: 400px){
+  .top-box-clients h1{
+    font-size: 1.4rem;
+  }
+  .top-box-clients p{
+    font-size: 1rem;
+  }
+
+  .col-1-clients p{
+    line-height: 1.3;
+  font-size: 1rem;
+  }
+  .col-2-clients p{
+    line-height: 1.3;
+  font-size: 1rem;
+  }
+  
+}

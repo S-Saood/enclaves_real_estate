@@ -1,0 +1,155 @@
+
+.finance-section{
+  width: 100%;
+  padding: 100px clamp(40px, 6vw, 100px);
+  background-color: #e8e8e8;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  font-family: "Inter", sans-serif;;
+
+}
+
+
+.top-box-finance{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  /* padding: 20px 40px; */
+}
+
+.top-box-finance h1{
+  font-size: 2.5rem;
+  color: var(--heading);
+  font-family: "Playfair Display", serif;
+
+}
+
+.top-box-finance p {
+  font-size: 1.2em;
+  color: var(--subheading);
+  width: 70%;
+  text-align: center;
+}
+
+
+.bottom-box-finance{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+
+.col-1-finance {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+.col-1-finance:hover{
+    transform: translateY(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .col-1-finance img{
+  width: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+} */
+
+.content-box-finance {
+  background-color: white;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.content-box-finance h2{
+  font-size: 1.5rem;
+  color: var(--subheading);
+}
+
+.content-box-finance p{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--bodytxt);
+}
+
+
+
+
+.img-box-finance img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+@media(max-width: 1000px){
+  .bottom-box-finance{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 800px){
+  .bottom-box-finance{
+    display: flex;
+    flex-direction: column;
+  }
+  .top-box-finance h1{
+    font-size: 2rem;
+  }
+  .top-box-finance p{
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+
+
+
+
+@media(max-width: 500px){
+  .top-box-finance h1{
+    font-size: 1.7rem;
+  }
+  .finance-section{
+    padding: 100px clamp(10px, 6vw, 100px);
+  }
+}
+
+
+@media(max-width: 400px){
+  .top-box-finance h1{
+    font-size: 1.4rem;
+  }
+  .top-box-finance p{
+    font-size: 1rem;
+  }
+
+  .col-1-finance p{
+    line-height: 1.3;
+  font-size: 1rem;
+  }
+  .col-2-finance p{
+    line-height: 1.3;
+  font-size: 1rem;
+  }
+  
+}

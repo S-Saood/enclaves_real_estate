@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #F5F5F5;
+  --bg-secondary: rgb(202, 202, 202);
+
+  --text-primary: #17320b;
+  --text-secondary: #555;
+  --text-white: #ffff;
+  --text-gray: #c1c1c1;
+
+  --btn-primary: #F97A00;
+  --btn-secondary: #F97A00;
+
+  --border: #2A2A2A;
+
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Inter", sans-serif;
+
+
+  --footer: #0B3D2E;
+  --heading: #0B3D2E;
+  --subheading: #3F5F55;
+  --bodytxt: #5F6F68;
+  --btn: #0B3D2E;
+  --btntxt: #FFFFFF;
+  --btnhover: #145A43;
+
+  --heading-font-family: font-family: "Playfair Display", serif;
+  --body-font-family: font-family: "Inter", sans-serif; 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+box-sizing: border-box;
+
+}
+
+.main-app{
+  background-color: black;
+  color: white;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--heading-font-family);
+}
+
+body {
+  font-family: var(--body-font-family);
+}
+
+
+/*
+main heading 
+section heading - font-size: 2.5rem
+section text - font-size: 1.2em;
+block heading - font-size: 1.5rem;
+block txt -   font-size: 1rem;
+
+
+section top/bottm: gap  3rem;
+pading section :   padding: 100px clamp(30px, 6vw, 100px);
+
+
+
+
+*/

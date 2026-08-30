@@ -49,7 +49,17 @@ function Header() {
 
 
       {/* sidebar */}
-        <div className={`sidebar ${menuOpen ? 'sidebar-open' : ''}`}> {/* Close Button */} <button className="close-menu" onClick={() => setMenuOpen(false)} > × </button> {/* Sidebar Links */} <div className="sidebar-links"> <a href="#home" onClick={() => setMenuOpen(false)}> Home </a> <a href="#about" onClick={() => setMenuOpen(false)}> About </a> <a href="#service" onClick={() => setMenuOpen(false)}> Service </a> <a href="#project" onClick={() => setMenuOpen(false)}> Projects </a> <a href="#footer" onClick={() => setMenuOpen(false)}> Contact </a> </div> </div>
+        <div className={`sidebar ${menuOpen ? 'sidebar-open' : ''}`}> {/* Close Button */} <button className="close-menu" onClick={() => setMenuOpen(false)} > × </button> 
+        
+        {/* Sidebar Links */} 
+        <div className="sidebar-links"> 
+          <a href="#home" onClick={() => setMenuOpen(false)}> Home </a> 
+          <a href="#about" onClick={() => setMenuOpen(false)}> About </a> 
+          <a href="#service" onClick={() => setMenuOpen(false)}> Service </a> 
+          <a href="#project" onClick={() => setMenuOpen(false)}> Projects </a> 
+          <a href="#footer" onClick={() => setMenuOpen(false)}> Contact </a> 
+          </div> 
+          </div>
       {/* sidebar-end */}
     </div>
   )

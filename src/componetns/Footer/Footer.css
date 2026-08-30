@@ -111,7 +111,7 @@ footer h3{
 
 .bottom-footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
@@ -128,7 +128,7 @@ footer h3{
 }
 
 footer p{
-  font-size: 16px;
+  font-size: 13px;
   color: var(--text-gray);
   text-decoration: none;
 }
@@ -206,10 +206,17 @@ footer a:hover {
   }
   .bottom-footer{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
   }
 
   .bottom-footer p{
     font-size: 12px;
+    display: flex;
+    
   }
 
 }

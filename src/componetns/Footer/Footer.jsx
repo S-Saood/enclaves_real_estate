@@ -31,13 +31,13 @@ function Footer() {
       <div className="footer-3">
         <h3>Contact</h3>
         <a href="https://www.google.com/maps" trarget="_blank"><PlaceIcon />
-          Enclave 101, Rampur, UP</a>
-        <a href="tel:+917900519312">
+          Enclave, Rampur, UP</a>
+        <a href="tel:+9112345678">
           <PhoneIcon />
           +91-835944578</a>
-        <a href="mailto:bitex@gmail.com">
+        <a href="mailto:enclaves@gmail.com">
           <EmailIcon />
-          bitex@gmail.com</a>
+          enclaves@gmail.com</a>
       </div>
             
 
@@ -63,9 +63,10 @@ function Footer() {
             <hr />
 
       <div className="bottom-footer">
-        <p>© 2026 BiteX Enclaves. All Rights Reserved.
+        <p>© 2026 Enclaves. All Rights Reserved.
 
 </p>
+<p>Crafted by BiteX</p>
 
       </div>
       </div>
